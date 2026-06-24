@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { TOOLS_LIST } from "@/components/constants";
+import { TOOLS_LIST } from "@/constants/tools";
 
 export default function Home() {
   return (

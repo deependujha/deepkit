@@ -1,7 +1,7 @@
-const ArgParseHelper = () => {
+const ArgParseHelperPage = () => {
     return (
         <div>Hello world</div>
     )
 }
 
-export default ArgParseHelper;
+export default ArgParseHelperPage;
