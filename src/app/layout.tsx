@@ -15,21 +15,23 @@ const geistMono = Geist_Mono( {
   subsets: [ "latin" ],
 } );
 
+const basePath = process.env.PAGES_BASE_PATH ?? '';
+
 export const metadata: Metadata = {
   title: 'DeepKit',
   description: 'Lightweight developer utilities with no backend, no tracking, and no nonsense.',
   icons: {
     icon: [
-      { url: "/favicon/favicon.ico" },
-      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: `${basePath}/favicon/favicon.ico` },
+      { url: `${basePath}/favicon/favicon.svg`, type: "image/svg+xml" },
+      { url: `${basePath}/favicon/favicon-96x96.png`, sizes: "96x96", type: "image/png" },
     ],
     apple: [
-      { url: "/favicon/apple-touch-icon.png", sizes: "180x180" },
+      { url: `${basePath}/favicon/apple-touch-icon.png`, sizes: "180x180" },
     ],
   },
 
-  manifest: "/favicon/site.webmanifest",
+  manifest: `${basePath}/favicon/site.webmanifest`,
 };
 
 export default function RootLayout( {
