@@ -1,4 +1,3 @@
-
 export const TOOLS_LIST: { name: string; path: string; description: string }[] = [
     {
         name: "Argparse Helper",
